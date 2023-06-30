@@ -1,0 +1,15 @@
+@use "src/styles/variables" as v;
+
+.user_acc_heading_header {
+  padding: 2rem v.$padding-1;
+}
+
+.user_acc_heading {
+  color: v.$main-text-color;
+}
+
+@media (min-width: 915px) {
+  .user_acc_heading_header {
+    width: 75%;
+  }
+}

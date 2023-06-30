@@ -1,0 +1,53 @@
+@use "src/styles/mixin" as m;
+@use "src/styles/variables" as v;
+
+.mob_nav_toggler_container {
+  width: 30px;
+  height: 30px;
+}
+
+.mob_nav_toggler_btn {
+  @include m.fullSize;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border: none;
+  cursor: pointer;
+}
+
+.mob_nav_toggler_btn:before,
+.mob_nav_toggler_btn:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 0.2rem 0;
+  position: absolute;
+  transition: transform 0.2s ease-out;
+}
+
+.mob_nav_toggler_btn:before {
+  margin-top: 0.7rem;
+}
+
+.mob_nav_toggler_btn:after {
+  margin-bottom: 0.7rem;
+}
+
+.mob_nav_toggler_btn.clicked:before,
+.mob_nav_toggler_btn.clicked:after {
+  width: 90%;
+  background-color: v.$close-btn-color;
+}
+
+.mob_nav_toggler_btn.clicked:before {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.mob_nav_toggler_btn.clicked:after {
+  transform: translateY(3px) rotate(45deg);
+}

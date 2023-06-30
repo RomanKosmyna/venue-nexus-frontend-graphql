@@ -1,0 +1,34 @@
+@use "src/styles/variables" as v;
+
+.sub_navigation_wrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 v.$padding-1;
+  background-color: v.$header-background;
+  color: v.$main-desktop-navigation-text-color;
+  font-size: v.$font-s-2;
+  border-bottom: 1px solid v.$grey-2;
+}
+
+.sub_navigation_container {
+  .sub_navigation_list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0.1rem v.$padding-3;
+    transition: background-color 0.2s ease-in;
+    border-radius: v.$border-radius-1;
+  }
+
+  li:hover {
+    background-color: #5e2bff;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$main-desktop-navigation-text-color;
+  }
+}

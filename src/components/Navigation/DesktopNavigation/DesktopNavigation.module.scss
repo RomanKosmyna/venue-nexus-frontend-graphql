@@ -1,0 +1,35 @@
+@use "src/styles/variables" as v;
+
+.navigation_wrapper {
+  background-color: inherit;
+}
+
+.navigation_container {
+  .navigation_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0.3rem v.$padding-2;
+    transition: background-color 0.2s ease-in;
+    border-radius: v.$border-radius-1;
+    cursor: pointer;
+  }
+
+  li:last-child {
+    padding-right: 0;
+  }
+
+  li:not(:last-child):hover {
+    background-color: v.$active-navigation-background;
+  }
+
+  a {
+    font-size: v.$font-s-2;
+    color: v.$main-desktop-navigation-text-color;
+    text-decoration: none;
+  }
+}
+

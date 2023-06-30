@@ -1,0 +1,6 @@
+@use "src/styles/variables" as v;
+
+.user_acc_line {
+  width: 100%;
+  border-top: 1px solid v.$grey-2;
+}

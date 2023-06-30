@@ -1,0 +1,31 @@
+@use "src/styles/variables" as v;
+@use "src/styles/mixin" as m;
+
+.venue_dropdown_container {
+  width: 100%;
+
+  .venue_dropdown_toggler {
+    width: 100%;
+    height: v.$height-55px;
+    @include m.flexAlign;
+    border-bottom: 1px solid v.$grey-2;
+    padding: 0 v.$padding-1;
+  }
+
+  .arrow_icon {
+    color: v.$white-1;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .venue_dropdown_btn {
+    display: flex;
+    align-items: center;
+    @include m.fullSize;
+    color: v.$white-1;
+    background-color: v.$main-background;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

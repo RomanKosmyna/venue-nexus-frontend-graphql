@@ -1,0 +1,16 @@
+@use "src/styles/variables" as v;
+
+.create_venue_wrapper {
+  width: 100%;
+  background-color: v.$main-background;
+  padding: 1rem v.$padding-1;
+}
+
+.create_venue_wrapper {
+  .create_venue_container {
+    background-color: v.$main-background;
+    border: 1px solid v.$grey-2;
+    border-radius: v.$border-radius-1;
+    padding: v.$padding-1;
+  }
+}

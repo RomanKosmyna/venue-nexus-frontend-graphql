@@ -1,0 +1,12 @@
+@use "src/styles/mixin" as m;
+@use "src/styles/variables" as v;
+
+.page {
+  @include m.fullSize($height: calc(100% - 104px));
+  background-color: v.$main-page-background;
+}
+
+.content-wrapper {
+  @include m.fullSize;
+  background-color: v.$main-background;
+}

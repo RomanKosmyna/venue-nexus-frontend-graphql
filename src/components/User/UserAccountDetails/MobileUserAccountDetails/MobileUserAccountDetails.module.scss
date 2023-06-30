@@ -1,0 +1,20 @@
+@use "src/styles/variables" as v;
+
+.user_acc_links_container {
+  padding: 1rem v.$padding-1;
+}
+
+.user_acc_settings_list {
+
+  li {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid v.$grey-2;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$white-1;
+  }
+}

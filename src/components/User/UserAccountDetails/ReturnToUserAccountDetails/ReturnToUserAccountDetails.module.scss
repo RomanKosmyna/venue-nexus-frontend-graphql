@@ -1,0 +1,23 @@
+@use "src/styles/mixin" as m;
+@use "src/styles/variables" as v;
+
+.return_to_user_acc_details {
+  height: v.$height-55px;
+  @include m.flexAlign;
+  border-bottom: 1px solid v.$grey-2;
+  padding: 0 v.$padding-1;
+
+  a {
+    display: flex;
+    align-items: center;
+    @include m.fullSize;
+    color: v.$white-1;
+    text-decoration: none;
+  }
+}
+
+.arrow_icon {
+  color: v.$white-1;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}

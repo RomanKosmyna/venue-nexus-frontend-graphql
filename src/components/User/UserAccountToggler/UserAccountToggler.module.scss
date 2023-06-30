@@ -1,0 +1,16 @@
+@use "src/styles/mixin" as m;
+
+.user_acc_toggler {
+  width: 30px;
+  height: 30px;
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.user_acc_toggle_btn {
+  @include m.fullSize();
+  border: none;
+  border-radius: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}

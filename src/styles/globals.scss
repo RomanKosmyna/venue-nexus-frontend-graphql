@@ -1,0 +1,30 @@
+@use "src/styles/variables" as v;
+@use "src/styles/mixin" as m;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  @include m.fullSize;
+  background-color: v.$main-body-background;
+}
+
+#next {
+  @include m.fullSize;
+}
+
+@media (min-width: 915px) {
+  #next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

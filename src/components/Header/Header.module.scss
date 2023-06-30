@@ -1,0 +1,12 @@
+@use "src/styles/variables" as v;
+
+.header {
+  width: 100%;
+  height: 64px;
+
+  //background-color: v.$header-background;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 v.$padding-1;
+}
