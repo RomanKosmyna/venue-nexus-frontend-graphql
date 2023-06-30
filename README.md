@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Venue Nexus
 
 ## Final Okten School project.
@@ -120,8 +119,3 @@ Since project is using Next.js 13 for its client side, it exploits built in fetc
     • Editing general textual information in the application (About the establishment, contacts...)
     <br/>
     • Editing general news
-
-## _Project is being optimized for all devices._
-=======
-# venue-nexus-frontend-graphql
->>>>>>> 37e20a8c6ea174dc5b6d45c51077dbefa821b2bc
